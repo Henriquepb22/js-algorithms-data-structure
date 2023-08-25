@@ -50,3 +50,10 @@ function printPairs(n) {
 ```
 
 *here every time we change `n` the number of operations grow exponential to it, we got 6 operations (i = 0, i <= n, i++, y = n, y > i and y--) but for every `i` we got `n` times of `y` operations so if `n` is 1 we have 6 operations, but if `n` is 5 we got 111(1+5x2(1+5x2)) operations*
+
+### Shorthands
+
+1. Arithmetic operations are constants
+2. Variable assignment is constant
+3. Acessing elements in a array by index or object is constant
+4. In a loop the complexity is the length of the loop times the complexity of what is inside it
