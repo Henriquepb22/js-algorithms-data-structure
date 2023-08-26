@@ -3,6 +3,18 @@
 This repository is a developer diary that I will use as I'm reading the [Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230) book, I will add examples for each part of it with javascript examples
 
 1. [Big O (WIP)](#big-o)
+2. Bubble Sort (TO DO)
+3. Selection Sort (TO DO)
+4. Insertion Sort (TO DO)
+5. Merge Sort (TO DO)
+6. Quick Sort (TO DO)
+7. Radix Sort (TO DO)
+8. Linked List (TO DO)
+9. Stack & Queue (TO DO)
+10. Binary Tree (TO DO)
+11. Binary Heap (TO DO)
+12. Hash Table (TO DO)
+13. Graph (TO DO)
 
 ## Big O
 
@@ -15,11 +27,11 @@ is the best? (run faster or with less computational impact)
 
 ### Time complexity
 
-The time complexity is how the runtime of a algorithm will change if the input size increase/decrease, to classify a algorithm we count the `inputs X operations` changes to check if it grows **constant, linear or exponential**.
+The time complexity is how the runtime of a algorithm will change if the input size increase/decrease, to classify a algorithm we count the `inputs X operations` changes to check if it grows **constant, linear, exponential or logarithmic**.
 
-#### Constant
+#### Constant - O(1)
 
-Constant or O(1): changing the input won't change the numbers of operations
+Changing the input won't change the numbers of operations
 
 *example:*
 ```javascript
@@ -29,9 +41,9 @@ function isEven(n) {
 ```
 >Every time we change `n` the number of operations still the same (the remainer(%) and the indentity(===) are the operations)
 
-#### Linear
+#### Linear - O(n)
 
-Linear O(n): changing the input the number of operations grows equality to it
+Changing the input the number of operations grows equality to it
 
 *example:*
 ```javascript
@@ -44,9 +56,9 @@ function countUntil(n) {
 
 >Every time we change `n` the number of operations grows equal to it, here we have 3 operations the asignment(i = 0) the less equal then(i <= n) and the increment(i++) so if `n` is 1 we have 3 operations but if `n` is 5 we have 11(1+5x2) operations because the less equal then and the increment will run N times
 
-#### Exponential
+#### Exponential - O(n²)
 
-Exponential O(n²): changing the input the number of operations grows exponential to it
+Changing the input the number of operations grows exponential to it
 
 *example:*
 ```javascript
@@ -70,11 +82,11 @@ function printPairs(n) {
 
 ### Space Complexity
 
-The space complexity is how the memory allocation of a algorithm will change if the input changes, to classify a algorithm we count the `inputs X assignments/memory` allocation changes to check if it grows **constant, linear or exponential.**
+The space complexity is how the memory allocation of a algorithm will change if the input changes, to classify a algorithm we count the `inputs X assignments/memory` allocation changes to check if it grows **constant, linear, exponential or logarithmic**.
 
-#### Constant
+#### Constant - O(1)
 
-Constant or O(1): changing the input won't change the numbers of memory allocation
+Changing the input won't change the numbers of memory allocation
 
 *example:*
 ```javascript
@@ -85,9 +97,9 @@ function isEven(n) {
 ```
 >Every time we change `n` the number of assignments still the same (the const isEven = n % 2 === 0)
 
-#### Linear
+#### Linear - O(n)
 
-Linear O(n): changing the input the number of assignments grows equality to it
+Changing the input the number of assignments grows equality to it
 
 *example:*
 ```javascript
@@ -102,9 +114,9 @@ function populateArrayWith(n) {
 
 >Every time we change `n` the length of the array grows equal to it, here for every for loop we push a new element `i` to the array
 
-#### Exponential
+#### Exponential O(n²)
 
-Exponential O(n²): changing the input the length of the matrix grows exponential to it
+Changing the input the length of the matrix grows exponential to it
 
 *example:*
 ```javascript
