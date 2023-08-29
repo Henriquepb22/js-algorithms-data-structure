@@ -1,8 +1,8 @@
 # Javascript Algorithms and Data Structures
 
-This repository is a developer diary that I will use as I'm reading the [Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230) book, I will add examples for each part of it with javascript examples
+This repository is a developer diary that I will use as I'm reading the [Grokking Algorithms: An Illustrated Guide for Programmers and Other Curious People](https://www.amazon.com/Grokking-Algorithms-illustrated-programmers-curious/dp/1617292230) book and studing data structures, I will add examples for each part of it with javascript examples
 
-1. [Big O (WIP)](#big-o)
+1. [Big O (Work in Progress)](#big-o)
 2. Bubble Sort (TO DO)
 3. Selection Sort (TO DO)
 4. Insertion Sort (TO DO)
