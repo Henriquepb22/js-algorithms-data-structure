@@ -20,14 +20,27 @@ This repository is a developer diary that I will use as I'm reading the [Grokkin
 
 ### Motivation
 
-We needed a way of measuring our algorithms complexity, if we have multiple solutions for the same problem which one
-is the best? (run faster or with less computational impact)
+We needed a way of measuring our algorithms complexity, if we have multiple solutions for the same problem which one is the best(requires lesser operations to run)?
+
+### Objective
+
+Big O notation establishes a way of measuring the complexity of our algorithms, particularly their time and space requirements, in relation to the size of their input.
+These notations can be one of the following:
+
+- Constant - O(1)
+- Linear - O(n)
+- Quadratic - O(n²)
+- Logarithmic - O(log n)
+- Linearithmic - O(n log n)
+- Polynomial - O(n^c)
+- Exponential - O(2^n)
+- Factorial - O(n!)
 
 ### Classifications
 
 ### Time complexity
 
-The time complexity is how the runtime of a algorithm will change if the input size increase/decrease, to classify a algorithm we count the `inputs X operations` changes to check if it grows **constant, linear, exponential or logarithmic**.
+Time complexity pertains to the fluctuations in an algorithm's execution time as the input size escalates. To classify an algorithm, we scrutinize the interplay of inputs and operations, identifying whether the algorithm adheres to a **constant, linear, quadratic, logarithmic, linearithmic, exponential or factorial** growth pattern. This analysis sheds light on an algorithm's scalability and efficiency traits by revealing how it responds to varying input sizes.
 
 #### Constant - O(1)
 
@@ -56,9 +69,9 @@ function countUntil(n) {
 
 >Every time we change `n` the number of operations grows equal to it, here we have 3 operations the asignment(i = 0) the less equal then(i <= n) and the increment(i++) so if `n` is 1 we have 3 operations but if `n` is 5 we have 11(1+5x2) operations because the less equal then and the increment will run N times
 
-#### Exponential - O(n²)
+#### Quadratic - O(n²)
 
-Changing the input the number of operations grows exponential to it
+Changing the input the number of operations grows quadratic to it
 
 *example:*
 ```javascript
@@ -71,7 +84,7 @@ function printPairs(n) {
 }
 ```
 
->Here every time we change `n` the number of operations grow exponential to it, we got 6 operations (i = 0, i <= n, i++, y = n, y > i and y--) but for every `i` we got `n` times of `y` operations so if `n` is 1 we have 6 operations, but if `n` is 5 we got 111(1+5x2(1+5x2)) operations
+>Here every time we change `n` the number of operations grow quadratic to it, we got 6 operations (i = 0, i <= n, i++, y = n, y > i and y--) but for every `i` we got `n` times of `y` operations so if `n` is 1 we have 6 operations, but if `n` is 5 we got 111(1+5x2(1+5x2)) operations
 
 #### Classification Shorthands
 
@@ -82,7 +95,7 @@ function printPairs(n) {
 
 ### Space Complexity
 
-The space complexity is how the memory allocation of a algorithm will change if the input changes, to classify a algorithm we count the `inputs X assignments/memory` allocation changes to check if it grows **constant, linear, exponential or logarithmic**.
+Space complexity pertains to the evolving memory allocation of an algorithm as the input size changes. Just as we categorize algorithms for time complexity, we assess the connection between inputs and memory allocations. This process helps us determine whether an algorithm follows a **constant, linear, quadratic, logarithmic, linearithmic, polynomial, exponential or factorial** growth pattern in terms of memory usage. This evaluation uncovers the ways an algorithm's memory needs transform with differing input scales, offering valuable insights into its scalability and memory efficiency characteristics.
 
 #### Constant - O(1)
 
@@ -114,9 +127,9 @@ function populateArrayWith(n) {
 
 >Every time we change `n` the length of the array grows equal to it, here for every for loop we push a new element `i` to the array
 
-#### Exponential O(n²)
+#### Quadratic O(n²)
 
-Changing the input the length of the matrix grows exponential to it
+Changing the input the length of the matrix grows quadratic to it
 
 *example:*
 ```javascript
@@ -133,7 +146,7 @@ function createMatrix(n) {
 }
 ```
 
->Here every time we change `n` the memory allocation grow exponential to it, in the first for loop for every `i` we create a matrix row and inside it we have another for loop for every `j` we push `i+j` to the row and after that push the row to the matrix
+>Here every time we change `n` the memory allocation grow quadratic to it, in the first for loop for every `i` we create a matrix row and inside it we have another for loop for every `j` we push `i+j` to the row and after that push the row to the matrix
 
 #### Classification Shorthands
 
